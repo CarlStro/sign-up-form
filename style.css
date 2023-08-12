@@ -1,0 +1,123 @@
+@font-face {
+    font-family: norse;
+    src: url(fonts/Norse.otf);
+}
+
+
+body {
+    display: flex;
+    margin: 0;
+    
+}
+
+.left-margin, .right-margin {
+    width: 30rem;
+    background-color: darkslategrey;
+    flex-shrink: 2;
+}
+
+img {
+    max-height: 100vh;
+    width: auto;
+    
+}
+
+.image-sidebar {
+    position: relative;
+}
+
+.logo img {
+    max-height: 100px;
+    width: auto;
+}
+
+.logo div{
+    font-size: 72px;
+    color: white;
+    font-family: norse, sans-serif;
+}
+
+.image-sidebar .logo {
+    position: absolute;
+    top: 220px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.content {
+    background-color: rgba(243, 239, 239, 0.788);
+    max-width: 40vw;
+}
+
+.content p {
+    font-size: 1.6rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    
+}
+
+.form-section {
+    background-color: rgba(255, 255, 255, 0.959);
+    font-size: 1.5rem;
+    padding: 2rem;
+    
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 0.5rem;
+}
+
+.form-section form > div > label {
+    font-size: 0.9rem;
+}
+
+.form-section form > div > input {
+    padding: 0.3rem;
+    width: 15rem;
+    border-radius: 0.3rem;
+    outline: none;
+}
+
+.form-section form > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.lower-section {
+    padding: 2rem;
+}
+
+.lower-section button {
+    padding: 0.8rem 2.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(76, 139, 163);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 6px 9px rgb(41, 41, 41);
+}
+
+input:invalid {
+    border: 2px solid rgb(233, 11, 11);
+}
+
+.form-section form > div > input:focus {
+    border: 2px solid rgb(15, 11, 233);
+    box-shadow: 4px 4px 2px rgb(231, 227, 227);
+}
+
+.lower-section button:active {
+    background-color: rgb(16, 63, 82);
+}
